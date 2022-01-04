@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main>
+      <div class="nft-card">
+        <div class="nft-card-top">
+          <div class="nft-image-container">
+            <img
+              src="images/image-equilibrium.jpg"
+              alt="Image Equilibrium"
+              class="nft-image"
+            />
+            <div class="nft-image-overlay">
+              <img
+                src="images/icon-view.svg"
+                alt="Eye icon"
+                class="nft-image-overlay-eye"
+              />
+            </div>
+          </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <a href="#/" class="nft-name">Equilibrium #3429</a>
+          <span class="nft-description">
+            Our Equilibrium collection promotes balance and calm.</span
+          >
+          <div class="nft-card-info-bar">
+            <div class="nft-price-container">
+              <img
+                src="images/icon-ethereum.svg"
+                alt="Icon ethereum"
+                class="nft-price-icon"
+              /><span class="nft-price">0.041 ETH</span>
+            </div>
+            <div class="nft-expires-in-container">
+              <img
+                src="images/icon-clock.svg"
+                alt="Clock icon"
+                class="nft-expires-in-icon"
+              />
+              <span class="nft-expires-in">3 days left</span>
+            </div>
+          </div>
+        </div>
+        <div class="nft-card-bottom">
+          <div class="nft-card-bottom-content">
+            <img
+              src="images/image-avatar.png"
+              alt="Created by avatar"
+              class="nft-created-by-avatar"
+            />
+            <span class="nft-creation-of">Creation of&nbsp;</span>
+            <!--I dont't know why there is no space between these two spans-->
+            <a href="#/" class="nft-created-by">Jules Wyvern</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Julian Hartl</a>.
+      </div>
+    </footer>
+  </body>
 </html>
